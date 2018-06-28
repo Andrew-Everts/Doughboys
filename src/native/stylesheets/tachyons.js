@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 const SPACING_NONE = 0;
-const SPACING_XS = '0.25rem';
-const SPACING_SMALL = '0.5rem';
-const SPACING_MEDIUM = '1rem';
-const SPACING_LARGE = '2rem';
-const SPACING_XL = '4rem';
-const SPACING_XXL = '8rem';
-const SPACING_XXXL = '16rem';
+const SPACING_XS = 2;
+const SPACING_SMALL = 4;
+const SPACING_MEDIUM = 8;
+const SPACING_LARGE = 16;
+const SPACING_XL = 32;
+const SPACING_XXL = 64;
+const SPACING_XXXL = 128;
 
 const FONT_SIZE_MEDIUM = 16;
 const FONT_SIZE_XL = 30;
