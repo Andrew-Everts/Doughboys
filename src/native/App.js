@@ -17,7 +17,7 @@ const App = () => (
 
 const { f3, f5, itemsCenter, justifyCenter, pa4, tc } = Tachyons;
 const styles = StyleSheet.create({
-    app: Tachyons.flex1,
+    app: flex(1),
     appHeader: compose(backgroundColor(Colors.Charcoal.Dark), flex(1), itemsCenter, justifyCenter, pa4),
     appTitle: compose(f5, color(Colors.White)),
     appIntro: compose(flex(2), f3, tc),
