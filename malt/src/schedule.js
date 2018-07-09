@@ -10,14 +10,14 @@ export const DAYS_OF_WEEK = {
     SATURDAY: 6,
 };
 
-const createMomentRange = hours =>
-    hours.map(({ opensAt, closesAt }) => ({
+const createMomentRange = schedule =>
+    schedule.map(({ opensAt, closesAt }) => ({
         opensAt: moment().set({ minute: 0, second: 0, millisecond: 0, ...opensAt }),
         closesAt: moment().set({ minute: 0, second: 0, millisecond: 0, ...closesAt }),
     }));
 
-export const TWR_HOURS = [DAYS_OF_WEEK.TUESDAY, DAYS_OF_WEEK.WEDNESDAY, DAYS_OF_WEEK.THURSDAY].reduce((hours, day) => {
-    hours[day] = createMomentRange([
+export const TWR_SCHEDULE = [DAYS_OF_WEEK.TUESDAY, DAYS_OF_WEEK.WEDNESDAY, DAYS_OF_WEEK.THURSDAY].reduce((schedule, day) => {
+    schedule[day] = createMomentRange([
         {
             opensAt: { day, hour: 11 },
             closesAt: { day, hour: 14, minute: 30 },
@@ -28,11 +28,11 @@ export const TWR_HOURS = [DAYS_OF_WEEK.TUESDAY, DAYS_OF_WEEK.WEDNESDAY, DAYS_OF_
         },
     ]);
 
-    return hours;
+    return schedule;
 }, {});
 
-export const HOURS = {
-    ...TWR_HOURS,
+export const SCHEDULE = {
+    ...TWR_SCHEDULE,
     [DAYS_OF_WEEK.SUNDAY]: createMomentRange([
         {
             opensAt: { day: DAYS_OF_WEEK.SUNDAY, hour: 14 },
@@ -63,4 +63,4 @@ export const HOURS = {
     ]),
 };
 
-export const getTodaysSchedule = () => HOURS[moment().day()];
+export const forToday = () => SCHEDULE[moment().day()];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { getTodaysSchedule } from 'doughboys-malt/hours';
+import { Schedule } from 'doughboys-malt';
 import { compose, ColorSheet, FlexSheet, SpacingSheet } from '../styles';
 
 const { flex1, itemsCenter, justifyCenter } = FlexSheet;
@@ -8,7 +8,7 @@ const { backgroundColor, Colors } = ColorSheet;
 const { pb2 } = SpacingSheet;
 
 const Home = () => {
-    const schedule = getTodaysSchedule();
+    const schedule = Schedule.forToday();
 
     return (
         <View
