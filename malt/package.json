@@ -1,6 +1,7 @@
 {
     "name": "doughboys-malt",
     "main": "src/index",
+    "private": true,
     "description": "Glue that binds together doughboys-web and doughboys-native",
     "dependencies": {
         "moment": "^2.22.2"
