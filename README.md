@@ -1,17 +1,18 @@
-## Doughboys
-This codebase is used to build the following packages
-- doughboys-native
-- doughboys-web
-- doughboys-malt
+## Getting Started - Development
+### Starting native app
+- Change into the `native` directory
+```
+npm install
+npm start
+```
 
-### Doughboys Native
-Built with react-native, this package builds a native application for viewing doughboys menu and ordering online
+### Syntax highlighting with atom
+[Intstall packages](https://flight-manual.atom.io/using-atom/sections/atom-packages/) (`cmd+,` or `ctrl+,`)
+- linter
+- linter-eslint
+- react
 
-### Doughboys Web
-Built with react, this package builds a web app for viewing doughboys menu and ordering online
-
-### Doughboys Malt
-A simple node application, this houses shared components, actions, and reducers used in doughboy apps.
-
-## Getting Started - Doughboys Native
-- Change into `native` directory
+### Component structure
+- Pages `src/scenes`
+- Re-usable objects / non-native specific components `src/malt`
+- Re-usable native components `src/components`
