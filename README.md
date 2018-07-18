@@ -22,9 +22,12 @@ A simple node application, this houses shared components, actions, and reducers 
 ## Getting Started - Development
 ### Install doughboys-malt packages
 Doughboys malt is the glue that's required for the other packages to run properly
-- Change into `native` directory
-- Run `npm install`
-- If you want to ensure it's working properly, `npm test`
+- Change into `malt` directory
+```
+npm install
+# then, if you want to ensure it's running properly
+npm test
+```
 
 ### Starting native app
 - Change into the `native` directory
