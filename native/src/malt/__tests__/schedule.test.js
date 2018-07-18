@@ -1,4 +1,4 @@
-import { DAYS_OF_WEEK, SCHEDULE, TWR_SCHEDULE } from 'doughboys-malt/src/schedule';
+import { DAYS_OF_WEEK, SCHEDULE, TWR_SCHEDULE } from 'doughboys-native/src/malt/schedule';
 
 describe('SCHEDULE', () => {
     it('has schedule for each day of week', () => {

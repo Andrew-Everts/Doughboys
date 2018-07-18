@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Schedule } from 'doughboys-malt';
+import { Schedule } from 'doughboys-native/src/malt';
 import { compose, ColorSheet, FlexSheet, SpacingSheet } from '../styles';
 
 const { flex1, itemsCenter, justifyCenter } = FlexSheet;
